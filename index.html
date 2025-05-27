@@ -11,11 +11,21 @@
     <!-- NAV BAR -->
     <nav class="flex justify-between sticky top-0 bg-white z-50 items-center px-3 py-2 md:px-20" >
         <h1 class="text-center text-[1.5rem] font-bold md:text-[2.5rem]" id="home">SEED <span class="text-orange-600">18</span></h1>
-        <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill=""><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <svg class="md:hidden" id="hamburger" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill=""><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        
         <ul class="flex items-center hidden text-[1.2rem] font-bold md:block">
-          <a href="#home" class="px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Home</a>
+          <a href="#" class="px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Home</a>
           <a href="#about" class="px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">About Us</a>
-          <a href="#Contact" class="px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Contact</a>
+          <a href="#services" class="px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Our Services</a>
+          <a href="#Contact" class="px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Contact Us</a>
+        </ul>
+
+        <ul class="flex flex-col gap-4 items-center fixed top-0 right-0 bg-white h-full md:hidden shadow transform translate-x-full transition-transform duration-300 z-50 hidden p-[3rem]" id="mobile">
+          <button  class="text-2xl bg-gray-200 p-3 rounded-full" id="closebtn">X</button>
+          <a href="#" class=" link text-[1.5rem] px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer ">Home</a>
+          <a href="#about" class=" link text-[1.5rem] px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">About Us</a>
+          <a href="#services" class="text-[1.5rem] px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Our Services</a>
+          <a href="#Contact" class=" link text-[1.5rem] px-8 hover:text-orange-400 hover:underline transition duration-250 ease-in-out cursor-pointer">Contact us</a>
         </ul>
 
         
@@ -36,7 +46,7 @@
         </div>
 
         <!-- ABOUT US  -->
-        <section class="p-2 lg:p-20" id="about">
+        <section class="p-2 py-[5rem] lg:p-20" id="about">
             <h2 class="text-[3rem] text-center text-orange-400 font-semibold block md:text-[4rem] md:hidden">ABOUT US</h2>
             <div class="flex flex-col md:flex-row md:px-[5rem] gap-5">
                 <div class="px-5 py-3 md:w-1/2">
@@ -44,17 +54,13 @@
                 </div>
                 <div class="md:w-1/2 md:pt-[rem]">
                     <h2 class="text-[3rem] text-orange-400 font-bold hidden md:text-[4rem] md:block">ABOUT US</h2>
-                    <p class="text-[1.3rem]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Expedita fugiat labore consequuntur laboriosam eaque? 
-                            Tenetur nesciunt accusamus enim, blanditiis accusantium 
-                            natus in, delectus dolores, consequatur nisi aut! Facere,
-                            corporis cupiditate!
+                    <p class="text-[1.2rem]">We're Seed 18, a small but mighty team of creatives, strategists, and storytellers who believe in the power of great ideas. We started this company with one goal in mind: to help brands grow by telling their stories in ways that feel real, honest, and unforgettable. For us, it's not just about advertising — it's about planting the right message at the right time and watching it bloom. Let's grow something amazing together.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-gray-900 py-16">
+        <section class="bg-gray-900 py-16 md:py-[6rem]" id="services">
             <div class="max-w-7xl mx-auto px-4 text-white">
                 <h2 class="text-4xl font-bold text-center text-orange-500 mb-12">Our Services</h2>
                 
@@ -62,17 +68,17 @@
                 
                 <!-- Service Card -->
                 <div class="bg-white text-black rounded-2xl p-6 shadow-lg hover:shadow-orange-500 transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-orange-500 mb-4">Web Development</h3>
-                    <p class="text-base">We build responsive, high-performing websites tailored to your brand and business needs.</p>
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-4">Newspaper Publications</h3>
+                    <p class="text-base">We create and run effective newspaper ads designed to get your message noticed and connect your business with the right audience.</p>
                 </div>
 
                 <div class="bg-white text-black rounded-2xl p-6 shadow-lg hover:shadow-orange-500 transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-orange-500 mb-4">UI/UX Design</h3>
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-4">Change Of Name</h3>
                     <p class="text-base">Our user-focused designs ensure seamless experiences that engage and retain your audience.</p>
                 </div>
 
                 <div class="bg-white text-black rounded-2xl p-6 shadow-lg hover:shadow-orange-500 transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-orange-500 mb-4">Consulting</h3>
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-4">Rentals</h3>
                     <p class="text-base">We provide expert tech consulting to guide your business through digital transformation.</p>
                 </div>
 
@@ -83,7 +89,7 @@
 
 
         <!-- OUR PARTNERS -->
-        <section class="p-2 md:py-20" >
+        <section class="p-2 py-[5rem] md:py-20" >
             <h2 class="text-[2.5rem] text-center pb-5">OUR PARTNERS</h2>
             <div class="grid grid-cols-4 items-center justify-center gap-10 px-5  md:flex-row md:gap-1 md:px-1 " >
                 <img src="./assets/Punch_logo.svg.png" alt="" class=" w-[20rem] md:grayscale hover:grayscale-0 transition duration-250 ease-in-out ">
@@ -100,7 +106,7 @@
 
         <!-- CEO -->
          <section class="p-2 md:px-10 bg-gray-900">
-            <div class="flex flex-col justify-center py-[3rem] gap-10 items-center md:flex-row">
+            <div class="flex flex-col justify-center py-[3rem] px-[2rem] gap-10 items-center md:flex-row">
                 <div class="w-full md:w-1/4">
                     <h2 class="text-[3rem] text-orange-400 text-center font-semibold block pb-10 md:hidden">MEET THE CEO</h2>
                     <div class="flex justify-center ">
@@ -124,17 +130,17 @@
          </section>
 
          <!-- CONTACT US -->
-          <section class="px-2 py-6 md:px-20" id="Contact">
+          <section class="px-2 py-6 md:px-20  md:py-[4rem]" id="Contact">
             <div class="flex justify-center">
                 <div class="flex flex-col gap-5">
                     <h3 class="text-center font-semibold text-[3rem]  md:text-[4rem] md:pb-10">CONTACT US</h3>
                     <div class="flex justify-center flex-col w-[20rem] gap-5 md:w-[50rem] sm:w-[40rem]">
-                        <input type="text" id="Name" placeholder="Name" class="p-2 rounded-lg bg-white">
-                        <input type="email" id="Email" placeholder="Email" class="p-2 rounded-lg bg-white">
+                        <input type="text" id="Name" placeholder="Name" required class="p-2 rounded-lg bg-white">
+                        <input type="email" id="Email" placeholder="Email" required class="p-2 rounded-lg bg-white">
                         <!-- <label for="Contact">Contact</label> -->
-                        <input type="number" id="Contact" placeholder="Contact" class="p-2 rounded-lg bg-white">
+                        <input type="number" id="Contact" placeholder="Contact" required class="p-2 rounded-lg bg-white">
                         <!-- <input type="text" placeholder="Type your message"> -->
-                        <textarea placeholder="Message" name="message" id="message" rows="7" cols="80" class="p-2 rounded-lg bg-white"></textarea>
+                        <textarea placeholder="Message" name="message" id="message" rows="7" cols="80" required class="p-2 rounded-lg bg-white"></textarea>
                     </div>
                     <div class="flex justify-center ">
                        <button class="bg-orange-500 max-w-max text-white px-3 py-1 rounded-lg text-[1.1rem] hover:text-orange-600 hover:bg-white transition duration-250 ease-in-out">Send Message</button>
@@ -149,9 +155,11 @@
         <div class="flex flex-col gap-5 justify-between px-5 pb-[10rem] pt-[2rem] md:flex-row md:px-10">
             <div class="">
                 <h3 class="text-[3rem] font-bold">SEED <span class="text-orange-400">18</span></h3>
-                <p class="w-[35ch] md:w-[50ch]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid tempora ipsum eum doloribus in, officia iste veniam corrupti laboriosam..</p>
-                <div>
-
+                <p class="w-[35ch] md:w-[50ch]">
+                    We're more than just an advertising agency — we're your creative partners in growth. From big ideas to bold campaigns, we help brands find their voice, tell their story, and connect with the people who matter most. Let’s grow something unforgettable, together.
+                </p>
+                <div class="pt-7">
+                    &copy; 2025 SEED <span class="text-orange-400">18</span>  All rights reserved
                 </div>
             </div>
             <div class="flex flex-col gap-5">
@@ -167,5 +175,9 @@
             </div>
         </div>
     </footer>
+<script src="./index.js">
+    
+</script>
 </body>
+
 </html>
